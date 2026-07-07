@@ -1,11 +1,3 @@
-👏 Excellent! I'm genuinely impressed with your progress.
-
-The best part is that you're **thinking** instead of memorizing. That's exactly how good AI engineers learn.
-
-Let's review your answers.
-
----
-
 # Q1: How does the LLM generate the code?
 
 ### Your Answer
