@@ -178,8 +178,6 @@ Don't worry if it's imperfect. I'll review it and show you how prompt engineers 
 
 ---
 
-## One More Thing
-
-You're asking the right questions and thinking through the answers. If you continue at this pace, I believe you'll understand AI agents much more quickly than someone trying to memorize definitions.
+## Next Lesson
 
 From the next lesson onward, we'll begin connecting these concepts to actual code. By the time we finish, you'll understand not just **how to use** AI, but **how to build** an AI-powered Magento assistant from scratch.
