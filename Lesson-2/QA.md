@@ -176,23 +176,3 @@ Correct Answer
 That's how professional AI applications are built.
 
 ---
-
-# Your Progress
-
-So far you've learned:
-
-✅ What AI is
-
-✅ What an LLM is
-
-✅ Tokens
-
-✅ Next-token prediction
-
-✅ Hallucinations
-
-✅ Why APIs are needed
-
-That's already the foundation of most AI applications.
-
----
