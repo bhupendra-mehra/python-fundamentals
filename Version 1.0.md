@@ -1,0 +1,543 @@
+# Roadmap Version 1.0
+# 📘 Phase 0 – AI Foundations (Completed ✅)
+
+**Goal:** Understand AI concepts before writing any code.
+
+---
+
+## Lesson 1 – Introduction to AI
+
+Topics Covered
+
+* What is Artificial Intelligence (AI)?
+* Traditional Programming vs AI
+* AI vs Rule-Based Systems
+* Real-world AI Examples
+* Why AI is becoming popular
+* AI in Magento
+* AI terminology
+
+### Outcome
+
+Understand what AI is and where it fits in software development.
+
+---
+
+## Lesson 2 – Understanding LLMs
+
+Topics Covered
+
+* What is an LLM?
+* Large Language Model explained
+* How ChatGPT works
+* Why ChatGPT is called a Language Model
+* Next Token Prediction
+* Tokens
+* Why AI generates answers token by token
+* Why LLMs sometimes make mistakes (Hallucinations)
+
+### Outcome
+
+Understand how an LLM generates responses.
+
+---
+
+## Lesson 3 – Chatbot vs AI Agent
+
+Topics Covered
+
+* What is a Chatbot?
+* What is an AI Agent?
+* Brain (LLM)
+* Tools
+* Memory
+* Planning
+* AI Agent Architecture
+* Why APIs are needed
+
+### Outcome
+
+Understand the difference between answering questions and performing tasks.
+
+---
+
+## Lesson 4 – Client-Server Architecture for AI
+
+Topics Covered
+
+* Browser
+* Backend
+* OpenAI API
+* LLM
+* API
+* API Key
+* Why API Keys stay on the Backend
+* Request / Response Architecture
+* Prompt Engineering Basics
+* Role
+* Task
+* Context
+* Rules
+* Output Format
+
+### Outcome
+
+Understand how an application communicates with an LLM.
+
+---
+
+## Lesson 5 – Python Environment Setup
+
+Topics Covered
+
+* Windows + WSL Architecture
+* Ubuntu Environment
+* Python Installation
+* Python Interpreter
+* pip Introduction
+* VS Code Integration
+* Project Structure
+
+### Outcome
+
+Development environment ready for AI.
+
+---
+
+# 🐍 Phase 1 – Python for AI Engineers
+
+**Goal:** Learn only the Python concepts required for AI development.
+
+---
+
+## Lesson 6 – Variables & Data Types
+
+Topics
+
+* Variables
+* Strings
+* Integer
+* Float
+* Boolean
+* type()
+* Type Conversion
+
+Mini Project
+
+User Information Card
+
+---
+
+## Lesson 7 – Operators & Conditions
+
+Topics
+
+* Arithmetic Operators
+* Comparison Operators
+* Logical Operators
+* if
+* elif
+* else
+
+Mini Project
+
+Eligibility Checker
+
+---
+
+## Lesson 8 – Functions ⭐⭐⭐
+
+Topics
+
+* Functions
+* Parameters
+* Return
+* Default Parameters
+* Scope
+
+Mini Project
+
+Greeting Generator
+
+---
+
+## Lesson 9 – Loops
+
+Topics
+
+* for
+* while
+* break
+* continue
+* range()
+
+Mini Project
+
+Student Marks Calculator
+
+---
+
+## Lesson 10 – Lists ⭐⭐⭐
+
+Topics
+
+* Creating Lists
+* Accessing Elements
+* append()
+* remove()
+* pop()
+* sort()
+* Looping Lists
+
+Mini Project
+
+Product List Manager
+
+---
+
+## Lesson 11 – Dictionaries ⭐⭐⭐⭐⭐
+
+Topics
+
+* Key Value Pair
+* Nested Dictionaries
+* Dictionary Methods
+
+Mini Project
+
+Customer Profile
+
+---
+
+## Lesson 12 – Tuples & Sets
+
+Topics
+
+* Tuple
+* Set
+* Differences
+* Use Cases
+
+Mini Project
+
+Unique Product Categories
+
+---
+
+## Lesson 13 – Modules & Imports ⭐⭐⭐
+
+Topics
+
+* import
+* from ... import
+* Standard Library
+* Third-Party Libraries
+
+Mini Project
+
+Math Utility
+
+---
+
+## Lesson 14 – File Handling
+
+Topics
+
+* Read File
+* Write File
+* with open()
+
+Mini Project
+
+Notes Application
+
+---
+
+## Lesson 15 – Exception Handling ⭐⭐⭐
+
+Topics
+
+* try
+* except
+* finally
+* raise
+
+Mini Project
+
+Safe Calculator
+
+---
+
+## Lesson 16 – JSON ⭐⭐⭐⭐⭐
+
+Topics
+
+* JSON
+* Serialization
+* Deserialization
+* Python Dictionary ↔ JSON
+
+Mini Project
+
+Customer JSON Reader
+
+---
+
+## Lesson 17 – Object-Oriented Programming (AI Edition)
+
+Topics
+
+* Classes
+* Objects
+* Constructor
+* Methods
+* Inheritance (basic)
+
+Mini Project
+
+ChatBot Class
+
+---
+
+# 🤖 Phase 2 – Python for AI
+
+**Goal:** Learn how Python communicates with AI services.
+
+---
+
+## Lesson 18
+
+Virtual Environments
+
+---
+
+## Lesson 19
+
+pip in Depth
+
+---
+
+## Lesson 20
+
+HTTP Requests
+
+---
+
+## Lesson 21
+
+REST APIs
+
+---
+
+## Lesson 22
+
+API Authentication
+
+---
+
+## Lesson 23
+
+OpenAI SDK
+
+---
+
+## Lesson 24
+
+Sending Your First Prompt
+
+---
+
+## Lesson 25
+
+Understanding AI Responses
+
+---
+
+## Lesson 26
+
+Prompt Engineering in Code
+
+---
+
+## Lesson 27
+
+Conversation History
+
+---
+
+## Lesson 28
+
+Building Your First AI Chatbot
+
+Mini Project
+
+Console AI Chatbot
+
+---
+
+# 🧠 Phase 3 – AI Fundamentals
+
+**Goal:** Understand modern AI concepts beyond just calling an API.
+
+---
+
+## Lessons
+
+* Embeddings
+* Vector Databases
+* Semantic Search
+* RAG
+* Context Window
+* Token Limits
+* Temperature
+* Top P
+* Function Calling
+* Structured Output
+* Streaming
+* Model Selection
+
+Mini Projects
+
+* PDF Chatbot
+* FAQ Bot
+* Documentation Search
+
+---
+
+# 🤖 Phase 4 – AI Agents
+
+**Goal:** Build intelligent systems that can use tools and perform tasks.
+
+---
+
+## Topics
+
+* Tool Calling
+* Planning
+* Memory
+* Reflection
+* Multi-Step Reasoning
+* Agent Loops
+* Single Agent
+* Multi-Agent Systems
+
+Frameworks
+
+* LangChain
+* LangGraph
+* CrewAI
+* AutoGen
+
+Mini Projects
+
+* Calculator Agent
+* Weather Agent
+* Email Agent
+* SQL Agent
+* Research Agent
+
+---
+
+# ☁️ Phase 5 – Production AI Engineering
+
+**Goal:** Deploy AI applications like a professional.
+
+---
+
+## Topics
+
+* FastAPI
+* Docker
+* Environment Variables
+* Logging
+* Monitoring
+* Testing
+* Caching
+* Redis
+* PostgreSQL
+* Deployment
+* AWS
+* Security
+* Cost Optimization
+
+Mini Project
+
+Production AI API
+
+---
+
+# 🛒 Phase 6 – Magento + AI (Specialization)
+
+**Goal:** Build AI-powered Magento solutions.
+
+---
+
+## Projects
+
+* AI Product Description Generator
+* AI SEO Generator
+* AI Customer Support Chatbot
+* AI Product Recommendation Engine
+* AI Order Status Assistant
+* AI Inventory Assistant
+* AI Admin Assistant
+* AI Sales Analytics Assistant
+* AI Documentation Assistant
+* AI Review Summarizer
+
+---
+
+# 🚀 Final Capstone Project
+
+## Magento AI Agent
+
+Features
+
+* Login Authentication
+* Product Search
+* Order Status
+* Customer Search
+* Inventory Lookup
+* Product Description Generation
+* SEO Metadata Generation
+* PDF Reading
+* FAQ Search
+* Memory
+* Tool Calling
+* Multi-Step Planning
+* Logging
+* Docker Deployment
+* AWS Deployment
+
+---
+
+# 🎯 Final Outcome
+
+By completing this roadmap, you'll be able to:
+
+* ✅ Explain how LLMs work from first principles.
+* ✅ Read and write Python confidently for AI applications.
+* ✅ Build AI applications using APIs and SDKs.
+* ✅ Understand RAG, embeddings, and vector databases.
+* ✅ Build AI agents that use tools and memory.
+* ✅ Integrate AI into Magento in a production-ready way.
+* ✅ Deploy AI services using Docker and AWS.
+* ✅ Prepare confidently for AI Engineer interviews.
+
+---
+
+## One improvement I'd like to make
+
+As we continue, I'll also keep this roadmap **versioned**.
+
+For example:
+
+* **Version 1.0** – Current roadmap.
+* **Version 1.1** – Updated with new lessons or better learning paths as AI evolves.
+
+This way, we'll have a structured curriculum rather than a loose sequence of chats, and you'll always know:
+
+* What you've completed.
+* What you're learning now.
+* What's coming next.
+* How each lesson contributes to the final goal of building a real AI agent.
