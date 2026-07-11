@@ -364,6 +364,48 @@ Both help you inspect the value's type.
 
 ---
 
+# Why did we use `type()`?
+
+Imagine tomorrow you're debugging an AI application.
+
+You receive:
+
+```python
+age = input("Enter Age")
+```
+
+User types:
+
+```text
+37
+```
+
+You think:
+
+```python
+age is int
+```
+
+But Python actually stores:
+
+```python
+age = "37"
+```
+
+If you don't know the data type, your program may behave unexpectedly.
+
+That's why professional Python developers frequently use:
+
+```python
+print(type(variable))
+```
+
+while debugging.
+
+This is very similar to how you might inspect values while debugging PHP or Magento.
+
+---
+
 # Mini Project
 
 Create a new file:
@@ -535,7 +577,7 @@ Don't guess randomly. Explain **why** you chose your answer.
 
 ---
 
-# Homework
+# Homework (Exercise 1)
 
 1. Create `lesson-6.py`.
 2. Run it.
@@ -546,3 +588,275 @@ Don't guess randomly. Explain **why** you chose your answer.
 4. Answer Challenges 1 , 2 , 3 , 4 and 6.
 
 ---
+
+## Type Conversion
+
+This is one of the most important concepts for AI.
+
+Let's use a real-world example.
+
+---
+
+# Imagine You're Registering on a Website
+
+The form asks:
+
+```text
+Enter your age:
+```
+
+You type:
+
+```text
+37
+```
+
+Did you type a number?
+
+From a human perspective:
+
+> Yes.
+
+From Python's perspective:
+
+> No.
+
+Why?
+
+Because the keyboard sends **characters**, not numeric types.
+
+So Python receives:
+
+```python
+"37"
+```
+
+This is called a **string**.
+
+---
+
+# Why Is This a Problem?
+
+Suppose we write:
+
+```python
+age = input("Enter your age: ")
+
+print(age + 10)
+```
+
+What do you think happens?
+
+Many beginners expect:
+
+```text
+47
+```
+
+But it won't work because:
+
+```python
+age
+```
+
+contains:
+
+```python
+"37"
+```
+
+not
+
+```python
+37
+```
+
+Python won't automatically convert it.
+
+---
+
+# The Solution: Type Conversion
+
+We tell Python:
+
+> Convert this string into an integer.
+
+Example:
+
+```python
+age = int(input("Enter your age: "))
+
+print(age + 10)
+```
+
+Now the flow becomes:
+
+```text
+User types
+
+37
+
+↓
+
+Python receives
+
+"37"
+
+↓
+
+int()
+
+↓
+
+37
+
+↓
+
+age + 10
+
+↓
+
+47
+```
+
+---
+
+# Magento Comparison
+
+Suppose Magento receives data from a REST API.
+
+The JSON might contain:
+
+```json
+{
+  "qty": "10"
+}
+```
+
+Even though it looks like a number, it's actually a string.
+
+Before performing calculations, backend code often converts it to an integer or float.
+
+Python follows the same idea.
+
+---
+
+# Python Type Conversion Functions
+
+| Function  | Converts To    |
+| --------- | -------------- |
+| `int()`   | Integer        |
+| `float()` | Decimal number |
+| `str()`   | String         |
+| `bool()`  | Boolean        |
+
+Examples:
+
+```python
+number = int("25")
+price = float("99.95")
+text = str(100)
+```
+
+---
+
+# Mini Project
+
+Create a new file named:
+
+```text
+lesson-6-conversion.py
+```
+
+Write:
+
+```python
+print("Age Calculator")
+
+age = int(input("Enter your age: "))
+
+print("Next year you will be:", age + 1)
+```
+
+Expected run:
+
+```text
+Age Calculator
+Enter your age:
+37
+
+Next year you will be:
+38
+```
+
+---
+
+# Final Challenge for Lesson 6 (Excercise 2)
+
+Without running Python, answer these:
+
+### Q1
+
+What is the data type?
+
+```python
+age = input("Enter age: ")
+```
+
+---
+
+### Q2
+
+How do you convert `"100"` into an integer?
+
+---
+
+### Q3
+
+Predict the output:
+
+```python
+number = int("50")
+
+print(number + 20)
+```
+
+---
+
+### Q4
+
+Predict the output:
+
+```python
+price = float("99.99")
+
+print(type(price))
+```
+
+---
+
+### Q5
+
+Why do AI applications often need type conversion?
+
+Think about:
+
+* User input
+* API responses
+* JSON data
+
+Explain it in your own words.
+
+---
+
+# 📌 Roadmap Status
+
+**Lesson 6 is almost complete.**
+
+Once you:
+
+* complete the type conversion mini project, and
+* answer the final five questions,
+
+I'll mark **Lesson 6 as completed**
+
