@@ -849,8 +849,6 @@ Explain it in your own words.
 
 ---
 
-# 📌 Roadmap Status
-
 **Lesson 6 is almost complete.**
 
 Once you:
@@ -858,5 +856,89 @@ Once you:
 * complete the type conversion mini project, and
 * answer the final five questions,
 
-I'll mark **Lesson 6 as completed**
+### Lesson 6 → AI Connection
+
+```python
+age = int(input("Enter your age: "))
+```
+
+Why is this important?
+
+Because when you build an AI chatbot:
+
+```python
+user_age = input("Enter your age: ")
+```
+
+the chatbot receives `"37"` (a string), not `37`.
+
+Before using it in business logic, you'll convert it:
+
+```python
+user_age = int(user_age)
+```
+
+This shows that every Python concept we learn has a direct application in AI development.
+
+# Real AI Example
+
+Now look at this code:
+
+```python
+user_age = int(input("Enter your age: "))
+
+if user_age >= 18:
+    print("Adult")
+```
+
+Two lessons ago, this might have looked confusing.
+
+Now you understand every line:
+
+* `input()` → receives text
+* `int()` → converts text to a number
+* Variable stores the value
+* `if` compares the number
+
+This is exactly why we learned the fundamentals first.
+
+# 🎯 Lesson 6 Summary
+
+Today you learned:
+
+* ✅ Variables
+* ✅ Memory concept
+* ✅ Data Types
+
+  * `str`
+  * `int`
+  * `float`
+  * `bool`
+* ✅ `type()`
+* ✅ Type Conversion
+
+  * `int()`
+  * `float()`
+  * `str()`
+* ✅ Why `input()` returns a string
+* ✅ Why AI applications require type conversion
+* ✅ String concatenation vs numeric addition
+
+---
+
+### Next Lesson
+
+➡ **Lesson 7 – Operators & Conditions**
+
+We'll learn:
+
+* Arithmetic operators (`+`, `-`, `*`, `/`, `%`, `//`, `**`)
+* Comparison operators (`==`, `!=`, `>`, `<`, `>=`, `<=`)
+* Logical operators (`and`, `or`, `not`)
+* `if`, `elif`, `else`
+* Nested conditions
+* Truthy and Falsy values (very useful in Python)
+* Mini Project: **Smart Eligibility Checker**
+
+---
 
