@@ -58,7 +58,7 @@ This is exactly what operators and conditions allow us to do.
 
 We'll cover this lesson in **five parts**.
 
-## Part 1 – Arithmetic Operators
+## Module 1 – Arithmetic Operators
 
 Learn how Python performs calculations.
 
@@ -78,7 +78,7 @@ Simple Calculator
 
 ---
 
-## Part 2 – Comparison Operators
+## Module 2 – Comparison Operators
 
 Learn how Python answers questions.
 
@@ -97,7 +97,22 @@ Age Eligibility Checker
 
 ---
 
-## Part 3 – Logical Operators
+## Module 3 – Conditional Statements
+
+Learn decision making.
+
+Topics:
+
+* `if`
+* `elif`
+* `else`
+* Nested `if`
+
+Mini Project:
+
+Student Grade Calculator
+
+## Module 4 – Logical Operators
 
 Combine multiple conditions.
 
@@ -113,24 +128,7 @@ Login Validation
 
 ---
 
-## Part 4 – Conditional Statements
-
-Learn decision making.
-
-Topics:
-
-* `if`
-* `elif`
-* `else`
-* Nested `if`
-
-Mini Project:
-
-Student Grade Calculator
-
----
-
-## Part 5 – Final Project
+## Module 5 – Final Project
 
 Build a **Smart User Eligibility Checker**.
 
