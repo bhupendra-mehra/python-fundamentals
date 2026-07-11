@@ -634,21 +634,3 @@ Imagine you're answering in an interview.
 * ⏳ Module 5 – Final Project
 
 ---
-
-## Mentor Improvement
-
-One small improvement to our course.
-
-From now on, whenever we introduce a new operator, ask yourself these three questions:
-
-1. **What does it do?**
-2. **What data type does it return?**
-3. **Where would I use it in Magento or an AI application?**
-
-For comparison operators, the answers are:
-
-* **What does it do?** → Compares two values.
-* **What data type does it return?** → `bool` (`True` or `False`).
-* **Where is it used?** → Business rules, validations, permissions, stock checks, and AI decision-making.
-
-If you build this habit, you'll start thinking like an engineer rather than someone who memorizes syntax.
