@@ -461,6 +461,80 @@ E = 25.6
 
 ---
 
+# Mini Challenge 3 (No Python Yet)
+
+Predict the output.
+
+```python
+age = "37"
+
+print(type(age))
+```
+
+What will Python print?
+
+Choose one:
+
+**A**
+
+```text
+<class 'int'>
+```
+
+**B**
+
+```text
+<class 'str'>
+```
+
+---
+
+# Mini Challenge 4
+
+Again, don't run the code.
+
+Predict the output:
+
+```python
+age = 37
+
+print(age + 10)
+```
+
+---
+
+# Mini Challenge 5
+
+Predict what will happen:
+
+```python
+age = "37"
+
+print(age + "10")
+```
+
+Will the output be:
+
+**A**
+
+```text
+47
+```
+
+**B**
+
+```text
+3710
+```
+
+**C**
+
+Error
+
+Don't guess randomly. Explain **why** you chose your answer.
+
+---
+
 # Homework
 
 1. Create `lesson-6.py`.
@@ -469,6 +543,6 @@ E = 25.6
 
    * Your code.
    * The output.
-4. Answer Challenge 1 and Challenge 2.
+4. Answer Challenges 1 , 2 , 3 , 4 and 6.
 
 ---
