@@ -527,3 +527,549 @@ Today you learned:
 **Complete these five exercises and send me your answers.**
 
 If you solve them correctly, we'll move directly to the next part of Module 2, where we'll extend `for` loops to work with **strings** and then introduce **nested `for` loops** before moving on to the module's mini project. This keeps everything within Module 2 without introducing concepts from later modules.
+
+
+Perfect. Since **Module 2** is not a large topic, we'll **finish it completely in one go** instead of splitting it further.
+
+---
+
+# Lesson 8 – Module 2 (Part 2): Iterating Over Strings, Nested Loops & Mini Project
+
+**Goal:** Complete everything related to the `for` loop before moving to `while`.
+
+---
+
+# 1. Iterating Over Strings
+
+Until now, we've used `range()` to generate numbers.
+
+A `for` loop can also iterate directly over a string.
+
+Example:
+
+```python
+name = "Bhupendra"
+
+for ch in name:
+    print(ch)
+```
+
+### Output
+
+```text
+B
+h
+u
+p
+e
+n
+d
+r
+a
+```
+
+---
+
+## How Python Executes It
+
+Python internally thinks like this:
+
+```text
+name = "Bhupendra"
+
+↓
+
+First Character
+
+↓
+
+B
+
+↓
+
+Second Character
+
+↓
+
+h
+
+↓
+
+Third Character
+
+↓
+
+u
+
+↓
+
+...
+
+↓
+
+Last Character
+
+↓
+
+a
+
+↓
+
+End
+```
+
+Each iteration stores one character in the loop variable.
+
+Here:
+
+```python
+ch
+```
+
+contains
+
+```
+Iteration 1 → B
+Iteration 2 → h
+Iteration 3 → u
+...
+```
+
+---
+
+## Magento Comparison
+
+PHP
+
+```php
+$name = "Magento";
+
+foreach(str_split($name) as $char){
+    echo $char;
+}
+```
+
+Python
+
+```python
+for ch in "Magento":
+    print(ch)
+```
+
+Python is simpler because strings are already iterable.
+
+---
+
+## AI Example
+
+Suppose an AI validates a coupon code.
+
+```python
+coupon = "SAVE20"
+
+for ch in coupon:
+    print(ch)
+```
+
+The AI can inspect each character one by one.
+
+---
+
+# 2. Nested `for` Loops
+
+A nested loop means:
+
+> A loop inside another loop.
+
+Syntax
+
+```python
+for i in range(...):
+
+    for j in range(...):
+
+        print(i, j)
+```
+
+---
+
+## Example
+
+```python
+for i in range(3):
+
+    for j in range(2):
+
+        print(i, j)
+```
+
+Output
+
+```text
+0 0
+0 1
+1 0
+1 1
+2 0
+2 1
+```
+
+---
+
+## Execution Flow
+
+```text
+Outer Loop → i = 0
+
+      ↓
+
+Inner Loop
+
+j = 0
+
+j = 1
+
+↓
+
+Outer Loop → i = 1
+
+↓
+
+Inner Loop
+
+j = 0
+
+j = 1
+
+↓
+
+Outer Loop → i = 2
+
+↓
+
+Inner Loop
+
+j = 0
+
+j = 1
+```
+
+**Important Rule**
+
+The **inner loop completes all its iterations** before the outer loop moves to the next value.
+
+---
+
+## Real-Life Example
+
+Imagine a classroom.
+
+3 rows
+
+Each row has 4 students.
+
+```text
+Row 1
+
+Student 1
+
+Student 2
+
+Student 3
+
+Student 4
+
+↓
+
+Row 2
+
+Student 1
+
+Student 2
+
+Student 3
+
+Student 4
+```
+
+Rows = Outer Loop
+
+Students = Inner Loop
+
+---
+
+## Magento Example
+
+Categories
+
+```
+Electronics
+
+    Laptop
+
+    Mobile
+
+Fashion
+
+    Shirt
+
+    Shoes
+```
+
+Conceptually:
+
+```python
+for category in categories:
+
+    for product in category.products:
+
+        print(product)
+```
+
+Nested loops are very common when dealing with hierarchical data.
+
+---
+
+## AI Example
+
+Imagine an AI processes multiple documents.
+
+Each document contains multiple pages.
+
+```text
+Document 1
+
+Page 1
+
+Page 2
+
+↓
+
+Document 2
+
+Page 1
+
+Page 2
+
+↓
+
+Document 3
+
+...
+```
+
+Conceptually:
+
+```python
+for document in documents:
+
+    for page in document.pages:
+
+        analyze(page)
+```
+
+This is a real-world use of nested loops.
+
+---
+
+# 3. Common Mistakes
+
+### Mistake 1
+
+Confusing the outer and inner loop variables.
+
+Bad:
+
+```python
+for i in range(3):
+
+    for i in range(2):
+        print(i)
+```
+
+Correct:
+
+```python
+for i in range(3):
+
+    for j in range(2):
+        print(i, j)
+```
+
+Always use different variable names for different loops.
+
+---
+
+### Mistake 2
+
+Expecting the inner loop to continue where it left off.
+
+It **starts from the beginning every time** the outer loop changes.
+
+---
+
+### Mistake 3
+
+Using nested loops unnecessarily.
+
+If one loop is enough, don't add another.
+
+Nested loops increase complexity and can slow programs when processing large amounts of data.
+
+---
+
+# Senior Developer Tips
+
+### 1.
+
+Choose meaningful variable names.
+
+Instead of:
+
+```python
+for i in products:
+```
+
+Prefer:
+
+```python
+for product in products:
+```
+
+Much easier to read.
+
+---
+
+### 2.
+
+When iterating over characters:
+
+```python
+for character in word:
+```
+
+is more descriptive than:
+
+```python
+for c in word:
+```
+
+---
+
+### 3.
+
+Don't use nested loops unless the data naturally has multiple levels.
+
+Example:
+
+```
+Orders
+
+↓
+
+Order Items
+```
+
+is a natural fit for nested loops.
+
+---
+
+# Mini Project
+
+## Student Attendance System
+
+Requirements
+
+1. Ask how many students are present.
+
+2. Print:
+
+```
+Student 1 Present
+
+Student 2 Present
+
+...
+```
+
+3. Ask for a classroom name.
+
+4. Print each character of the classroom name on a new line.
+
+This project combines:
+
+* `for`
+* `range()`
+* String iteration
+* User input
+
+No new concepts beyond this module.
+
+---
+
+# Exercises
+
+### Exercise 1
+
+Print every character of your name on a separate line.
+
+---
+
+### Exercise 2
+
+Predict the output without running:
+
+```python
+for ch in "AI":
+    print(ch)
+```
+
+---
+
+### Exercise 3
+
+Predict the output:
+
+```python
+for i in range(2):
+
+    for j in range(3):
+
+        print(i, j)
+```
+
+---
+
+### Exercise 4
+
+Write a program that asks the user for a word and prints each letter on a new line.
+
+---
+
+### Exercise 5 (Mini Project)
+
+Implement the **Student Attendance System** described above.
+
+---
+
+# Module 2 Summary
+
+You have now learned everything related to the **`for` loop**:
+
+* ✅ `for` loop syntax
+* ✅ Loop variables
+* ✅ `range()`
+* ✅ Iterating over strings
+* ✅ Nested loops
+* ✅ Python best practices
+* ✅ Magento use cases
+* ✅ AI agent use cases
+
+---
+
+## Roadmap Progress
+
+* ✅ Lesson 8 – Module 1: Completed
+* 🔄 Lesson 8 – Module 2: **Awaiting exercises**
+* ⏭️ Next: **Lesson 8 – Module 3: `while` Loop** (we'll cover it in one complete session, as per our new course format).
+
