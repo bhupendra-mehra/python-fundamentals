@@ -1,5 +1,7 @@
 # Code Review
 
+## Part 1
+
 ## Exercise 1
 
 ```python
@@ -185,11 +187,8 @@ This isn't a new concept—just a style improvement. For now, you're perfectly f
 
 ---
 
-Excellent. This is exactly the pace we should maintain.
+# Part 2
 
-Let's review them quickly.
-
----
 
 # Exercise 1
 
