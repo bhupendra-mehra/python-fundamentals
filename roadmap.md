@@ -423,9 +423,9 @@ Deploy an AI Chatbot
 | ----------------------------------------- | --------- |
 | ✅ Part 1 – Python Fundamentals            | Completed |
 | ✅ Part 2 – Professional Python            | Completed |
-| ▶️ Part 3 – Advanced Python               | Next      |
-| ⏳ Part 4 – Database Development           | Pending   |
-| ⏳ Part 5 – API Development                | Pending   |
+| ✅ Part 3 – Advanced Python                | Completed |
+| ✅ Part 4 – Database Development           | Completed |
+| ✅ Part 5 – API Development                | Completed |
 | ⏳ Part 6 – Professional Development Tools | Pending   |
 | ⏳ Part 7 – Data Science Foundation        | Pending   |
 | ⏳ Part 8 – AI & ML Fundamentals           | Pending   |
